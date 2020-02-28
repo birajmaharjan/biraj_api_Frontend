@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Admin Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="images/icon/logo.png" alt="Pet Adoption" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="adminDashboard.html">
+                                <i class="fas fa-tachometer-alt"></i>User Dashboard</a>
+
+                        </li>
+                        <li>
+                            <a href="pet_details.html">
+                                <i class="fas fa-chart-bar"></i>Pet Details</a>
+                        </li>
+
+                        <li>
+                            <a href="user_details.html">
+                                <i class="far fa-check-square"></i>User Details</a>
+                        </li>
+                        <li>
+                            <a href="adopted_pet.html">
+                                <i class="fas fa-calendar-alt"></i>Adopted Pet</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    PET ADOPTION
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="adminDashboard.html">
+                                <i class="fas fa-tachometer-alt"></i>Admin Dashboard</a>
+
+                        </li>
+                        <li>
+                            <a href="pet_details.html">
+                                <i class="fas fa-chart-bar"></i>Pet Details</a>
+                        </li>
+
+                        <li>
+                            <a href="user_details.html">
+                                <i class="far fa-check-square"></i>User Details</a>
+                        </li>
+                        <li>
+                            <a href="adopted_pet.html">
+                                <i class="fas fa-calendar-alt"></i>Adopted Pet</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form id="petform" class="form-header" action="" method="POST">
+                                
+                            </form>
+                            <div class="header-button">
+
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="images/icon/user2.png" alt="Admin" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="#"><span class="adminname"></span></a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="images/icon/user2.png" alt="Admin" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="#"><span class="adminname"></span></a>
+                                                    </h5>
+                                                    <span class="email">mhzbiraj11@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="account-dropdown__footer">
+                                                <a href="#" onclick="logoutUser('usertoken','username','type');">
+                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Pet Details</h2>
+                                    <a href="register_pet.html">
+                                        <div class="au-btn au-btn-icon au-btn--blue">
+                                            <i class="zmdi zmdi-plus"></i> Add Pet</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-lg-12">
+                                <div class="table-responsive table--no-card m-b-30">
+                                    <table id="petDetail" class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Name</th>
+                                                <th>Type</th>
+                                                <th>Breed</th>
+                                                <th>Age</th>
+                                                <th>Gender</th>
+                                                <th>Image</th>
+                                                <th>Action</th>
+                                                <th>Action</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+
+                            <div id="formdiv" class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Pet Register</strong>
+                                        <small> Form</small>
+                                    </div>
+                                    <!-- <form id="petform" method="POST"> -->
+                                    <div class="card-body card-block">
+                                        <div class="form-group">
+                                            <label for="pet" class=" form-control-label">Pet Name</label>
+                                            <input type="text" id="petname" placeholder="Enter your pet name"
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group">
+
+                                            <label for="pet Type" class=" form-control-label">Pet Type</label>
+                                            <input type="text" id="pettype" placeholder="Enter pet type"
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pet gender" class=" form-control-label">Pet Gender</label>
+                                            <input type="text" id="petgender" placeholder="Enter Pet Gender"
+                                                class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="breed" class=" form-control-label">Pet Breed</label>
+                                            <input type="text" id="petbreed" placeholder="Enter Pet Breed"
+                                                class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="age" class=" form-control-label">Pet Age</label>
+                                            <input type="text" id="petage" placeholder="Enter Pet Age"
+                                                class="form-control">
+                                        </div>
+
+                                        <!-- <div class="form-group">
+                                            <label for="image" class=" form-control-label">Pet Image</label>
+                                            <input type="file" id="petimage" placeholder="Enter Pet image" class="form-control">
+                                        </div> -->
+
+
+                                        <div><span id="message"></span></div>
+                                        <button type="submit" class="btn btn-primary update" id="petbtn">Update
+                                            Pet</button>
+
+
+                                    </div>
+                                    <!-- </form> -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2019 Pet Adoption. All rights reserved. Powered by Nisha Shahi
+                                        Thakuri
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script src="../../resources/js/custom.js"></script>
+    <script src="../../resources/js/logoutUser.js "></script>
+    <script src="../../resources/js/localstorageSetting.js "></script>
+
+    <script>
+        setusername();
+        /////////////////delete pet data
+        $('#petDetail').on('click', '.delete', function () {
+            console.log($(this)[0].attributes.petid.nodeValue);
+            petid = $(this)[0].attributes.petid.nodeValue;
+            var isDelete = confirm("Are your sure want to Delete pet ? ");
+            console.log(petid)
+            if (isDelete == true) {
+                $.ajax({
+                    url: 'http://localhost:5000/v1/pet/delete/' + petid,
+                    headers: {
+                        authorization: "Bearer " + window.localStorage.getItem('adminToken')
+                    },
+                    method: 'delete',
+                    dataType: 'json',
+                    success: function () {
+                        window.location.href = "pet_details.html";
+                    },
+                    error: function () {
+
+                    }
+                })
+
+            } else { // handle else 
+            }
+        })
+        $('#petDetail').on('click', '.edit', function (event) {
+            // console.log($(this)[0].attributes.petid.nodeValue);
+            petid = $(this)[0].attributes.petid.nodeValue;
+            event.preventDefault();
+
+            $.ajax({
+                url: 'http://localhost:5000/v1/getpet/' + petid,
+                headers: {
+                    authorization: "Bearer " + window.localStorage.getItem('adminToken')
+                },
+                method: 'get',
+                dataType: 'json',
+                success: function (result) {
+                    $('#petname').val(result.petname);
+                    $('#pettype').val(result.type);
+                    $('#petage').val(result.age);
+                    $('#petbreed').val(result.breed);
+                    $('#petgender').val(result.gender);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            })
+
+
+        })
+        $('#formdiv').on('click', '.update', function (event) {
+            // console.log($(this)[0].attributes.petid.nodeValue);
+
+            console.log(petid)
+
+            event.preventDefault();
+            var formdata = new FormData();
+            const data = {
+                petname: $('#petname').val(),
+                pettype: $('#pettype').val(),
+                petgender: $('#petgender').val(),
+                petbreed: $('#petbreed').val(),
+                petage: $('#petage').val()
+
+            }
+            console.log(data);
+            $.ajax({
+                url: 'http://localhost:5000/v1/pet/update/' + petid,
+                method: 'PUT',
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                dataType: 'json',
+                success: function (result, status) {
+                    console.log(result.message);
+                    $('#message').html(result.message);
+                    window.location.href = "pet_details.html"
+                },
+                error: function (jqXHR, status) {
+                    console.log(jqXHR)
+
+                }
+            })
+
+        })
+    </script>
+</body>
+
+</html>
+<!-- end document-->
